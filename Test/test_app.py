@@ -18,7 +18,7 @@ class TestBase(TestCase):
         # Will be called before every test
         db.create_all()
 
-        task1 = Todos(name="new task", description= "this new task")
+        task1 = Todos (task = "task")
 
         db.session.add(task1)
         db.session.commit()
