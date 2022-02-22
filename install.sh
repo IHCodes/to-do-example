@@ -11,3 +11,5 @@ python3 -m venv .venv
 source .venv/bin/activate
 echo "installing project requirements"
 pip install -r requirements.txt
+
+python3 -m pytest --cov=application
