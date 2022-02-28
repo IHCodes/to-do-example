@@ -12,4 +12,4 @@ source .venv/bin/activate
 echo "installing project requirements"
 pip install -r requirements.txt
 
-python3 -m pytest --cov=application
+python3 -m pytest --cov-report term-missing --cov=application
